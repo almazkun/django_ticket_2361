@@ -1,0 +1,7 @@
+<h1>{{ object.name }}</h1>
+{% for book in books %}
+    <h2>{{book.title}}</h2>
+    {% for image in book.book_image.all %}
+        <p>{{ image.url }}</p>
+    {% endfor %}
+{% endfor %}
